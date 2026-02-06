@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    tools:context=".TestActivity">
+
+    <TextView
+        android:id="@+id/testNameView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hardware_test"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@color/primary_color" />
+
+    <Button
+        android:id="@+id/runTestButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/accent_color"
+        android:padding="12dp"
+        android:text="@string/run_test"
+        android:textColor="#263238"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_margin="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/resultsList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/test_complete" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/secondary_color"
+        android:padding="12dp"
+        android:text="@string/back"
+        android:textColor="#424242"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/error_message"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:gravity="center" />
+    <Button
+        android:id="@+id/retryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/secondary_color"
+        android:padding="12dp"
+        android:text="@string/retry"
+        android:textColor="#424242"
+        android:textSize="16sp"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/loadingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/loading"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/testStatusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/testing"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/testCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/test_complete"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:gravity="center" />
+    <Button
+        android:id="@+id/runTestAgainButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/secondary_color"
+        android:padding="12dp"
+        android:text="@string/run_test_again"
+        android:textColor="#424242"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>
